@@ -6,3 +6,5 @@
 
 
 This repository is created as an educational project
+
+https://asciinema.org/a/8chlrvEvgGTFHdcvQDlKAhLIU 
