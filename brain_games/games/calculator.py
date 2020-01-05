@@ -20,7 +20,7 @@ def calculate(name):
         answer = prompt.string('You answer: ')
         if answer != true_answer:
             print(f'{answer} is wrong answer ;(. Correct answer'
-                  f' was {true_answer}.\n' f'Let\'s try again, {name}!')
+                  f' was {true_answer}.\n' f'Let\'s try again, {name}!\n')
             break
 
 
