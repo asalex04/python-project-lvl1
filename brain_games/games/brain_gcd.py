@@ -4,19 +4,18 @@ from random import randint, choice
 
 def main():
     print('\nWelcome to the Brain Games!\n'
-          'What is the result of the expression?\n')
+          'Find the greatest common divisor of given numbers.\n')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!\n')
-    calculate(name)
+    run(name)
 
 
-def calculate(name):
+def run(name):
     for i in range(3):
         number1 = randint(0, 100)
         number2 = randint(0, 100)
-        math = choice(['+', '-', '*', '/'])
-        true_answer = count(number1, number2, math)
-        print(f'Question: {number1} {math} {number2}')
+        true_answer = gcd(number1, number2)
+        print(f'Question: {number1} {number2}')
         answer = prompt.string('You answer: ')
         if answer != true_answer:
             print(f'{answer} is wrong answer ;(. Correct answer'
@@ -26,17 +25,8 @@ def calculate(name):
             print(f'Correct!')
 
 
-def count(x, y, sign):
-    if sign == '+':
-        res = x + y
-    elif sign == '-':
-        res = x - y
-    elif sign == '*':
-        res = x * y
-    else:
-        res = x / y if y != 0 else print('Деление на ноль')
-        return f'{res:.2f}'
-    return f'{res}'
+def gcd(a, b):
+    return str(gcd(b, a % b) if b else a)
 
 
 if __name__ == '__main__':
