@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "asalex04_brain_games"
-version = "0.3.2"
+version = "0.4.1"
 description = ""
 authors = ["None"]
 packages = [
@@ -9,7 +9,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.6"
-prompt = "^0.4.0"
+prompt = "^0.4.1"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.7.9"
