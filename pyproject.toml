@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "asalex04_brain_games"
-version = "0.6.1"
+version = "0.6.2"
 description = "collection simple games"
-authors = ["asalex04_brain_games" <arc04@mail.ru>]
+authors = ["asalex04_brain_games <arc04@mail.ru>"]
 repository = "https://github.com/asalex04/python-project-lvl1"
 packages = [
     { include = "brain_games" },
