@@ -1,6 +1,5 @@
-import re
 import prompt
-from random import randint, choice
+from random import randint
 
 
 def main():
@@ -18,7 +17,8 @@ def run(name):
         answer = prompt.string('You answer: ')
         if answer != is_simple1(number):
             print(f'{answer} is wrong answer ;(. Correct answer'
-                  f' was {is_simple1(number)}.\n' f'Let\'s try again, {name}!\n')
+                  f' was {is_simple1(number)}.\n'
+                  f'Let\'s try again, {name}!\n')
             break
         else:
             print(f'Correct!')
