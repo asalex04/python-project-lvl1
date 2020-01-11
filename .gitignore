@@ -2,4 +2,5 @@
 dist/
 *.egg-info
 /.idea
+/brain_games/__pycache__
 
