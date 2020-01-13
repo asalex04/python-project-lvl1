@@ -10,4 +10,3 @@ def get_game():
 
 def is_even(number):
     return number % 2
-

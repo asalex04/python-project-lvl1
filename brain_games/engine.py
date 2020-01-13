@@ -24,4 +24,3 @@ def run(game=None):
             return
         print(f'Correct!\n')
     print(f'Congratulations, {name}!\n')
-
