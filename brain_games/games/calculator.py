@@ -1,29 +1,21 @@
-import prompt
 from random import randint, choice
 
 
-def main():
-    print('\nWelcome to the Brain Games!\n'
-          'What is the result of the expression?\n')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!\n')
-    calculate(name)
+TASK = 'What is the result of the expression?'
 
 
-def calculate(name):
-    for i in range(3):
-        number1 = randint(0, 100)
-        number2 = randint(0, 100)
-        math = choice(['+', '-', '*', '/'])
-        true_answer = count(number1, number2, math)
-        print(f'Question: {number1} {math} {number2}')
-        answer = prompt.string('You answer: ')
-        if answer != true_answer:
-            print(f'{answer} is wrong answer ;(. Correct answer'
-                  f' was {true_answer}.\n' f'Let\'s try again, {name}!\n')
-            break
-        else:
-            print(f'Correct!')
+def true_answer(num1, num2, math):
+    return count(num1, num2, math)
+
+
+def get_game():
+    number1 = randint(0, 100)
+    number2 = randint(0, 100)
+    math = choice(['+', '-', '*', '/'])
+    return (
+        f'{number1} {math} {number2}',
+        f'{true_answer(number1, number2, math)}'
+    )
 
 
 def count(x, y, sign):
@@ -37,7 +29,3 @@ def count(x, y, sign):
         res = x / y if y != 0 else print('Деление на ноль')
         return f'{res:.2f}'
     return f'{res}'
-
-
-if __name__ == '__main__':
-    main()

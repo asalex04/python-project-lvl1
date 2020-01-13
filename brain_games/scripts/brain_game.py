@@ -1,8 +1,8 @@
-from brain_games import cli
+from brain_games import engine
 
 
 def main():
-    cli.run()
+    engine.run()
 
 
 if __name__ == '__main__':
