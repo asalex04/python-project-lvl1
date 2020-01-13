@@ -53,8 +53,8 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "2.1.1"
 
 [metadata]
-content-hash = "8534d02c7c3e99cc6f9c7bbd098a010baed8a682840911e5e4b85af64cbcdcfb"
-python-versions = "^3.7"
+content-hash = "50271dc840390e80b186553a6a7a5fd8ce69bad44bcdbbc125babc3d40fba20c"
+python-versions = "^3.6"
 
 [metadata.files]
 entrypoints = [
