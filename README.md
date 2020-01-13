@@ -7,6 +7,9 @@
 
 This repository is created as an educational project
 
+brain-even
+[![asciicast](https://asciinema.org/a/8chlrvEvgGTFHdcvQDlKAhLIU.svg)](https://asciinema.org/a/8chlrvEvgGTFHdcvQDlKAhLIU)
+
 https://asciinema.org/a/8chlrvEvgGTFHdcvQDlKAhLIU 
 
 https://asciinema.org/a/q1W7nQhvpopBdENn1uqkZ0aTn
