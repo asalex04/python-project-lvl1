@@ -1,6 +1,6 @@
 .venv/
 dist/
 *.egg-info
-/.idea
-/brain_games/__pycache__
+.idea/
+__pycache__
 
