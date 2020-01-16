@@ -1,31 +1,14 @@
 from random import randint, choice
-
+from operator import add, sub, mul
 
 TASK = 'What is the result of the expression?'
 
 
-def true_answer(num1, num2, math):
-    return count(num1, num2, math)
-
-
-def get_game():
+def get_round():
     number1 = randint(0, 100)
     number2 = randint(0, 100)
-    math = choice(['+', '-', '*', '/'])
+    math, calculate = choice((('+', add), ('-', sub), ('*', mul)))
     return (
         f'{number1} {math} {number2}',
-        f'{true_answer(number1, number2, math)}'
+        str(calculate(number1, number2))
     )
-
-
-def count(x, y, sign):
-    if sign == '+':
-        res = x + y
-    elif sign == '-':
-        res = x - y
-    elif sign == '*':
-        res = x * y
-    else:
-        res = x / y if y != 0 else print('Деление на ноль')
-        return f'{res:.2f}'
-    return f'{res}'
